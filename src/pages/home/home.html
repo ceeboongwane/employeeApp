@@ -1,0 +1,20 @@
+<ion-content padding id="welcome">
+<div id="pic">
+    <img src="../../assets/imgs/logo5.jpg" alt="">
+</div>
+
+<h1>Weclome to Employee App</h1>
+<div id="text"> Managing employees have never been simpler</div>
+<ion-list no-lines id="list">
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" #name></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #pass></ion-input>
+  </ion-item>
+</ion-list>
+<button ion-button full round (click)="confirmUser(name.value,pass.value)" id="marginTop">LOGIN</button>
+</ion-content>
